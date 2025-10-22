@@ -1,0 +1,62 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/10/19 13:43:23 by mkhoubaz          #+#    #+#             */
+/*   Updated: 2025/10/19 22:24:43 by mkhoubaz         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+static short is_set(char c, char const *set)
+{
+    int     i;
+
+    i = 0;
+    while (set[i])
+    {
+        if (set[i] == c)    return (1);
+        i++;
+    }
+    return (0);
+}
+
+char *ft_strtrim(char const *s1, char const *set)
+{
+    char    *ptr;
+    int     i;
+    int     len;
+    int     end;
+
+    len = ft_strlen(s1);
+    i = 0;
+    end = 0;
+    while (is_set(s1[i], set))      i++; 
+
+    while (is_set(s1[len - 1], set))
+    {
+        len--;
+        end++;
+    }
+    
+    len = ft_strlen(s1);
+    ptr = malloc(sizeof(char) * (len - i - end)); // 9 - 3 - 1 = 
+    if (!ptr)       return (NULL);
+    
+    ft_memcpy(ptr, s1 + i, (len - i - end));
+
+    return (ptr);
+}
+
+// #include <stdio.h>
+// int main()
+// {
+//     char name[] = "\0";
+//     char set[] = "";
+
+//     printf("%s \n", ft_strtrim(name, set));
+// }

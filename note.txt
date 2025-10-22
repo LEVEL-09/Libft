@@ -1,0 +1,1 @@
+Failed tests: strlcpy, substr, memcmp, memchr, memmove, strtrim, strncmp, strnstr, strjoin, split, strlcat
