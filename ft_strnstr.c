@@ -6,7 +6,7 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 08:43:28 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/16 10:24:38 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/23 08:58:18 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,38 +14,38 @@
 
 char *ft_strnstr(const char *big, const char *little, size_t len)
 {
-    size_t      i;
-    size_t      j;
-    size_t      point;
+    size_t  i;
+    size_t  j;
+    size_t  find;
 
-    if (little[0] == '\0')     return ((char *)big);
+    if (!(*little))
+        return ((char *)big);
 
     i = 0;
-    while (big[i] && i < len)
+    while (i < len && big[i])
     {
         j = 0;
-        if (little[j] == big[i])    point = i;
-        while (little[j] == big[i] && i < len)
+        if (big[i] == little[j])
         {
-            // printf("%c", big[i]);
-            if (!little[j])      return ((char *)big + point);
-            j++;
-            i++;
+            find = i;
+            while (little[j])
+            {
+                if (big[i] != little[j])
+                {
+                    i = find;
+                    break;
+                }
+                else
+                {
+                    i++;
+                    j++;
+                }
+            }
+            if (!little[j])
+                return ((char *)big + find);
         }
-        if (!little[j])      return ((char *)big + point);
         i++;
     }
 
     return (NULL);
 }
-
-// #include <stdio.h>
-
-// int main()
-// {
-//     char name[] = "it'sworld out there";
-//     char litter[] = "world";
-
-//     printf("%s \n", ft_strnstr(name, litter, (size_t)10));
-
-// }
