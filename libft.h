@@ -6,7 +6,7 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 11:45:01 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/22 17:50:23 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/23 08:31:30 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,6 @@ void *ft_memcpy(void *dest, const void *src, size_t n);
 char *ft_strdup(const char *s);
 size_t ft_strlen(const char *s);
 size_t ft_strlcpy(char *dst, const char *src, size_t size);
+char *ft_strnstr(const char *big, const char *little, size_t len);
 
 #endif
