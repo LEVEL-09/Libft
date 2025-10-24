@@ -6,7 +6,7 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 13:43:23 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/24 11:21:23 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/24 19:42:55 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,10 @@ char *ft_strtrim(char const *s1, char const *set)
     len = ft_strlen(s1);
     i = 0;
     end = 0;
+
+    if (!s1 || !set)
+        return (NULL);
+
     while (is_set(s1[i], set))      i++; 
 
     while (is_set(s1[len - 1], set))
