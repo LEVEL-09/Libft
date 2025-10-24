@@ -6,7 +6,7 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 07:23:50 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/19 07:25:51 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/24 11:24:53 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,6 @@ void *ft_calloc(size_t nmemb, size_t size)
     ptr = malloc(total);
     if (!ptr)       return (NULL);
     
-    memset(ptr, 0, total);
+    ft_memset(ptr, 0, total);
     return (ptr);
 }
