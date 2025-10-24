@@ -6,7 +6,7 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 09:02:18 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/19 07:05:00 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/24 11:18:47 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,3 @@ char *ft_strdup(const char *s)
    ft_memcpy(p, s, ft_strlen(s) + 1);
    return (p);
 }
-
-// #include <stdio.h>    
-// int main()
-// {
-//    char name[] = "leon";
-//    printf("%s \n", ft_strdup(name));
-//    printf("%s \n", strdup(name));
-// }

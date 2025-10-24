@@ -6,7 +6,7 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 13:43:23 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/19 22:24:43 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/24 11:21:23 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,19 +44,10 @@ char *ft_strtrim(char const *s1, char const *set)
     }
     
     len = ft_strlen(s1);
-    ptr = malloc(sizeof(char) * (len - i - end)); // 9 - 3 - 1 = 
+    ptr = malloc(sizeof(char) * (len - i - end));
     if (!ptr)       return (NULL);
     
     ft_memcpy(ptr, s1 + i, (len - i - end));
 
     return (ptr);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-//     char name[] = "\0";
-//     char set[] = "";
-
-//     printf("%s \n", ft_strtrim(name, set));
-// }

@@ -27,12 +27,3 @@ char *ft_strjoin(char const *s1, char const *s2)
 
     return (ptr);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-//     char name[] = "saad";
-//     char name1[] = "anss";
-
-//     printf("%s \n", ft_strjoin(name, NULL));
-// }

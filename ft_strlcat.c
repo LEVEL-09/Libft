@@ -35,27 +35,3 @@ size_t ft_strlcat(char *dst, const char *src, size_t size)
     dst[dst_len] = '\0'; 
     return (old_dst_len + src_len);
 }
-
-// #include <stdio.h>
-// #include <string.h>
-// #define X 0
-
-// int main()
-// {
-//     char name[7] = " ";
-//     char text[15] = " "; 
-
-//     size_t output = ft_strlcat(text, name, X);
-
-//     printf("%s \n", text); 
-//     printf("size:%ld \n", output);
-
-//     // strlcat
-//     char name1[7] = " ";
-//     char text1[15] = " "; 
-
-//     size_t output2 = strlcat(text1, name1, X);
-
-//     printf("%s \n", text1); 
-//     printf("size:%ld \n", output2);
-// }

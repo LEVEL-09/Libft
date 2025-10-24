@@ -6,7 +6,7 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 22:26:43 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/21 10:04:26 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/24 11:19:00 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,20 +96,3 @@ char **ft_split(char const *s, char c)
     ptr[j] = NULL;
     return (ptr);
 }   
-
-// #include <stdio.h>
-// int main()
-// {
-//     char text[] = " .   simp   jjj   fdf ddddd         ";
-//     char c = ' ';
-
-//     int i = 0;
-//     // ft_split(text, c);
-//     char **ptr = ft_split(text, c);
-//     while (i < 6)
-//     {
-//         printf("%s \n", *(ptr + i));
-//         i++;
-//     }
-    
-// }

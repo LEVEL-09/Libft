@@ -6,7 +6,7 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 06:28:55 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/17 09:45:32 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/24 11:19:27 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,28 +26,3 @@ void *ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return ((unsigned char*)dest);
 }
-
-// #include <stdio.h>
-// int main() 
-// {
-// 	int	x = 20;
-// 	int	y = 10;
-
-//     printf("Value of b before calling memcpy: %d\n", y);
-
-//     ft_memcpy(&y, &x, sizeof(int)); 
-
-//     printf("Value of b after calling memcpy: %d\n", y);
-	
-
-//     int a = 20;
-//     int b = 10;
-    
-//     printf("Value of b before calling memcpy: %d\n", b);
-
-//     memcpy(&b, &a, sizeof(int)); 
-
-//     printf("Value of b after calling memcpy: %d\n", b);
-
-//     return 0;
-// }
