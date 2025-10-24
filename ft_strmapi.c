@@ -6,7 +6,7 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 08:41:34 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/21 09:36:24 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/24 11:18:30 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,17 +34,3 @@ char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
     ptr[i] = '\0';
     return (ptr);
 }
-// char test(unsigned int x, char u)
-// {
-//     u = 'x';
-//     return (u);
-// }
-
-// #include <stdio.h>
-// int main()
-// {
-//     char (*f)(unsigned int, char);
-
-//     f = &test;
-//     printf("%s \n", ft_strmapi(NULL, f));
-// }

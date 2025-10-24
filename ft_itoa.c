@@ -6,7 +6,7 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 06:56:06 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/22 17:20:20 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/24 11:19:54 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ static void my_putnbr(char *ptr, int n, int *i)
 
 char *ft_itoa(int n)
 {
-    // int     len;
     int     clone;
     int     i;
     int     neg;
@@ -49,7 +48,7 @@ char *ft_itoa(int n)
         i++;
     } 
 
-    ptr = malloc(sizeof(char) * (i + neg + 1)); //+1 for \0
+    ptr = malloc(sizeof(char) * (i + neg + 1)); 
     if (!ptr)
         return (NULL);
 
@@ -62,13 +61,3 @@ char *ft_itoa(int n)
     ptr[j + 1] = '\0';
     return (ptr);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-//     char * a = ft_itoa(-2147483648);
-//     if (!a)
-//         return 0;
-//     printf("%s",a);
-//     free(a);
-// }

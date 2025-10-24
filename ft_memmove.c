@@ -19,26 +19,9 @@ void *ft_memmove(void *dest, const void *src, size_t n)
     ptr = (unsigned char*)dest;
     while (n-- > 0)
     {
-        //n--
         *(ptr + n) = *((unsigned char*)src + n);
         
     }
     
     return ((unsigned char*)dest);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-//     char src[] = "king";
-
-//     ft_memmove(src+1, src, (size_t)3);
-
-//     printf("%s \n", src);
-
-//     char src1[] = "king";
-
-//     memmove(src1+1, src1, (size_t)3);
-
-//     printf("%s \n", src1);
-// }

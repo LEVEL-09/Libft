@@ -6,7 +6,7 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 10:15:31 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/22 16:29:23 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/24 11:18:43 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,21 +28,3 @@ void ft_striteri(char *s, void (*f)(unsigned int, char*))
         i++;
     }
 }
-
-// void test(unsigned int x, char* s)
-// {
-//     *s = 's';
-// }
-
-// #include <stdio.h>
-// int main()
-// {
-//     char name[] = "leon";
-
-//     void (*f)(unsigned int, char*);
-//     f = &test;
-
-//     ft_striteri(name, f);
-
-//     printf("%s \n", name);
-// }

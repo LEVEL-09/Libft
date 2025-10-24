@@ -24,15 +24,3 @@ int ft_strncmp(const char *s1, const char *s2, size_t n)
     }
     return (0);
 }
-
-// #include <stdio.h>
-
-// int main()
-// {
-//     char name[] = "leon";
-//     char name2[] = "leoq";
-
-//     printf("%d \n", ft_strncmp(name, name2, (size_t)3));
-
-//     printf("%d \n", strncmp(name, name2, (size_t)3));
-// }

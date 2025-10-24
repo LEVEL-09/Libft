@@ -6,7 +6,7 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 11:21:02 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/17 11:34:28 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/24 11:19:36 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,14 +26,3 @@ void *ft_memchr(const void *s, int c, size_t n)
     }
     return (NULL); 
 }
-
-// #include <stdio.h>
-// int main()
-// {
-//     char s[] = "leon";
-//     char c = 'l';
-
-//     printf("%s \n", (char *)ft_memchr(s, c , (size_t)3));
-
-//     printf("%s \n", (char *)memchr(s, c , (size_t)3));
-// }

@@ -6,7 +6,7 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 09:23:14 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/22 12:01:43 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/24 11:19:07 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,16 +32,3 @@ void ft_putnbr_fd(int n, int fd)
 	n = n + '0';
 	write(fd, &n, 1);
 }
-
-// #include <fcntl.h>
-// int main()
-// {
-//     int text = -1337;
-//     int fd = open("text.txt", O_WRONLY | O_CREAT | O_TRUNC, 0644);
-//     if (fd < 0)
-//     {
-//         return (0);
-//     }
-//     ft_putnbr_fd(text, fd);
-//     close(fd);
-// }
