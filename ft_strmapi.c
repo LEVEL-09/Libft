@@ -6,7 +6,7 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 08:41:34 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/24 11:18:30 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/26 00:41:03 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
     if (!ptr)   return (NULL);
 
     i = 0;
-    while (i < len) // 0 l ; 1 e; 2 o; 3 n
+    while (i < len)
     {
         ptr[i] = (*f)(i, s[i]);
         i++;
