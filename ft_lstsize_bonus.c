@@ -12,7 +12,6 @@
 
 #include "libft.h"
 
-#include <stdio.h>
 int	ft_lstsize(t_list *lst)
 {
     int	i;
