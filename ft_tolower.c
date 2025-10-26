@@ -6,11 +6,11 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 16:16:48 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/24 11:18:05 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/25 23:09:00 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
-    return (c + 32 * (c >= 65 && c <= 90));
+	return (c + 32 * (c >= 65 && c <= 90));
 }

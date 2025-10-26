@@ -6,7 +6,7 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 06:56:06 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/24 11:19:54 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/26 00:42:55 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,11 +47,9 @@ char *ft_itoa(int n)
         clone /= 10;
         i++;
     } 
-
     ptr = malloc(sizeof(char) * (i + neg + 1)); 
     if (!ptr)
         return (NULL);
-
     j = 0;
     if (neg == 1)
         ptr[j] = '-';

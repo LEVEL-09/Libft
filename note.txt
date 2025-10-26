@@ -1,3 +1,5 @@
 Failed tests: 👍
 
-check: calloc
+check what is deffrent in strmapi?
+
+fix norminte: split, itoa

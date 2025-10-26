@@ -6,11 +6,11 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 15:47:51 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/24 11:17:44 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/25 23:08:26 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
-    return (c - 32 * (c >= 97 && c <= 122));
+	return (c - 32 * (c >= 97 && c <= 122));
 }

@@ -6,7 +6,7 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 22:26:43 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/24 11:19:00 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/25 23:12:48 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,8 @@ char **ft_split(char const *s, char c)
     int     start;
     int     j;
     
-    if (!s)     return (NULL);
+    if (!s)
+        return (NULL);
 
     j = 0;
     word = count_word(s, c);
