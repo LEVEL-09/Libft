@@ -6,7 +6,7 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 06:56:06 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/27 15:11:20 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/27 15:57:19 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,10 @@ static void my_putnbr(char *ptr, int n, int *i)
     ptr[*(i)] = (n % 10) + '0';
 }
 
-char    *ptr_alloc(char *ptr, int *i, int *neg, int *n)
+char    *ptr_alloc(int *i, int *neg, int *n)
 {
 	int	j;
+	char *ptr;
 
 	ptr = malloc(sizeof(char) * (*(i) + *(neg) + 1)); 
 	if (!ptr)
@@ -63,6 +64,6 @@ char *ft_itoa(int n)
         clone /= 10;
         i++;
     }
-    ptr = ptr_alloc(ptr, &i, &neg, &n);
+    ptr = ptr_alloc(&i, &neg, &n);
     return (ptr);
 }
