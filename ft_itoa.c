@@ -6,7 +6,7 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 06:56:06 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/26 20:53:38 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/27 15:11:20 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,13 +22,29 @@ static void my_putnbr(char *ptr, int n, int *i)
     ptr[*(i)] = (n % 10) + '0';
 }
 
+char    *ptr_alloc(char *ptr, int *i, int *neg, int *n)
+{
+	int	j;
+
+	ptr = malloc(sizeof(char) * (*(i) + *(neg) + 1)); 
+	if (!ptr)
+        return (NULL);
+	j = 0;
+    if (*neg == 1)
+        ptr[j] = '-';
+    else
+        j = -1;
+    my_putnbr(ptr, *n, &j);
+    ptr[j + 1] = '\0';
+	return (ptr);
+}
+
 char *ft_itoa(int n)
 {
     int     clone;
     int     i;
     int     neg;
     char    *ptr;
-    int     j;
 
     if (n == -2147483648)
         return(ft_strdup("-2147483648"));
@@ -37,7 +53,7 @@ char *ft_itoa(int n)
     neg = 0;
     if (n < 0)
     {
-        neg = 1;
+    	neg = 1;
         n *= -1;
     }
     i = 0;
@@ -46,16 +62,7 @@ char *ft_itoa(int n)
     {
         clone /= 10;
         i++;
-    } 
-    ptr = malloc(sizeof(char) * (i + neg + 1)); 
-    if (!ptr)
-        return (NULL);
-    j = 0;
-    if (neg == 1)
-        ptr[j] = '-';
-    else
-        j = -1;
-    my_putnbr(ptr, n, &j);
-    ptr[j + 1] = '\0';
+    }
+    ptr = ptr_alloc(ptr, &i, &neg, &n);
     return (ptr);
 }
