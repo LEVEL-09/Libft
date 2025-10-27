@@ -6,7 +6,7 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 11:45:01 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/27 08:07:59 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/27 15:54:29 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ char *ft_strrchr(const char *s, int c);
 char *ft_strtrim(char const *s1, char const *set);
 char *ft_substr(char const *s, unsigned int start, size_t len);
 int ft_tolower(int c);
-int ft_tolower(int c);
+int ft_toupper(int c);
 t_list *ft_lstnew(void *content); // done
 void ft_lstadd_front(t_list **lst, t_list *new); // done
 int ft_lstsize(t_list *lst); // done
