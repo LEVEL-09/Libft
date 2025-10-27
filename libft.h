@@ -6,7 +6,7 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 11:45:01 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/26 19:31:08 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/27 08:07:59 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ t_list *ft_lstlast(t_list *lst); // done
 void ft_lstadd_back(t_list **lst, t_list *new); // done
 void ft_lstdelone(t_list *lst, void (*del)(void*)); // done
 void ft_lstclear(t_list **lst, void (*del)(void*)); // done
-void ft_lstiter(t_list *lst, void (*f)(void *));
+void ft_lstiter(t_list *lst, void (*f)(void *)); // done
 t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
 #endif
