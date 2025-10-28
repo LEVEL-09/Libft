@@ -6,7 +6,7 @@
 #    By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/24 09:54:39 by mkhoubaz          #+#    #+#              #
-#    Updated: 2025/10/24 10:43:16 by mkhoubaz         ###   ########.fr        #
+#    Updated: 2025/10/28 15:23:05 by mkhoubaz         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,7 +31,7 @@ CFLAGS = -Wall -Wextra -Werror
 all: $(NAME)
 
 bonus: $(NAME) $(OBJB)
-	ar ru $(NAME) $(OBJB)
+	ar rc $(NAME) $(OBJB)
 
 $(NAME): $(OBJS)
 	ar rc $(NAME) $(OBJS)

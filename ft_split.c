@@ -6,21 +6,18 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 22:26:43 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/28 08:27:11 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/28 15:23:25 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	ptr_free(char **ptr, int word)
+static void	ptr_free(char **ptr, int j)
 {
-	int	j;
-
-	j = 0;
-	while (j < word)
+	while (j >= 0)
 	{
 		free(ptr[j]);
-		j++;
+		j--;
 	}
 	free(ptr);
 }
@@ -76,7 +73,7 @@ char	**fun(char **ptr, char const *s, char c, int word)
 		ptr[j] = storge(s, start, i);
 		if (!ptr[j])
 		{
-			ptr_free(ptr, word);
+			ptr_free(ptr, j);
 			return (NULL);
 		}
 		j++;
