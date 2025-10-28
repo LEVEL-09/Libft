@@ -6,13 +6,13 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 18:49:20 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/27 18:43:45 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/28 08:20:57 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list *ft_lstlast(t_list *lst)
+t_list	*ft_lstlast(t_list *lst)
 {
 	int	i;
 

@@ -6,7 +6,7 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 08:29:45 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/27 18:43:21 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/28 08:21:25 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 
 	if (!f || !del)
 		return (NULL);
-
 	new = NULL;
 	node_lst = NULL;
 	while (lst)
