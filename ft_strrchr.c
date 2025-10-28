@@ -6,37 +6,37 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 07:50:01 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/24 11:18:22 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/28 08:33:54 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
-    int     i;
-    int     flag;
-    int     point;
+	int	i;
+	int	flag;
+	int	point;
 
-    i = 0;
-    flag = 0;
-    point = 0;
-    while (s[i])
-    {
-        if (s[i] == (const char)c)
-        {
-            flag = 1;
-            point = i;
-        }
-        i++;
-    }
-    if (s[i] == (const char)c)
-        {
-            flag = 1;
-            point = i;
-        }
-    
-    if (flag != 0)  return ((char *)s + point);
-    else    return (NULL);
-    
+	i = 0;
+	flag = 0;
+	point = 0;
+	while (s[i])
+	{
+		if (s[i] == (const char)c)
+		{
+			flag = 1;
+			point = i;
+		}
+		i++;
+	}
+	if (s[i] == (const char)c)
+	{
+		flag = 1;
+		point = i;
+	}
+	if (flag != 0)
+		return ((char *)s + point);
+	else
+		return (NULL);
 }

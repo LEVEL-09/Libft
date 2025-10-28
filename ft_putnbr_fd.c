@@ -6,15 +6,15 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 09:23:14 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/24 11:19:07 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/28 08:25:07 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
-    if (n == -2147483648)
+	if (n == -2147483648)
 	{
 		write(fd, "-2147483648", 11);
 		return ;

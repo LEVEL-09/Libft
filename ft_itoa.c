@@ -6,64 +6,64 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 06:56:06 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/27 15:57:19 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/28 08:18:13 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void my_putnbr(char *ptr, int n, int *i)
+static void	my_putnbr(char *ptr, int n, int *i)
 {
-    if (n/10 != 0)
-    {
-        my_putnbr(ptr, n/10, i);
-    }
-    *i += 1;
-    ptr[*(i)] = (n % 10) + '0';
+	if (n / 10 != 0)
+	{
+		my_putnbr(ptr, n / 10, i);
+	}
+	*i += 1;
+	ptr[*(i)] = (n % 10) + '0';
 }
 
-char    *ptr_alloc(int *i, int *neg, int *n)
+char	*ptr_alloc(int *i, int *neg, int *n)
 {
-	int	j;
-	char *ptr;
+	int		j;
+	char	*ptr;
 
-	ptr = malloc(sizeof(char) * (*(i) + *(neg) + 1)); 
+	ptr = malloc(sizeof(char) * (*(i) + *(neg) + 1));
 	if (!ptr)
-        return (NULL);
+		return (NULL);
 	j = 0;
-    if (*neg == 1)
-        ptr[j] = '-';
-    else
-        j = -1;
-    my_putnbr(ptr, *n, &j);
-    ptr[j + 1] = '\0';
+	if (*neg == 1)
+		ptr[j] = '-';
+	else
+		j = -1;
+	my_putnbr(ptr, *n, &j);
+	ptr[j + 1] = '\0';
 	return (ptr);
 }
 
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
-    int     clone;
-    int     i;
-    int     neg;
-    char    *ptr;
+	int		clone;
+	int		i;
+	int		neg;
+	char	*ptr;
 
-    if (n == -2147483648)
-        return(ft_strdup("-2147483648"));
-    if (n == 0)
-        return(ft_strdup("0"));
-    neg = 0;
-    if (n < 0)
-    {
-    	neg = 1;
-        n *= -1;
-    }
-    i = 0;
-    clone = n;
-    while (clone != 0)
-    {
-        clone /= 10;
-        i++;
-    }
-    ptr = ptr_alloc(&i, &neg, &n);
-    return (ptr);
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
+	if (n == 0)
+		return (ft_strdup("0"));
+	neg = 0;
+	if (n < 0)
+	{
+		neg = 1;
+		n *= -1;
+	}
+	i = 0;
+	clone = n;
+	while (clone != 0)
+	{
+		clone /= 10;
+		i++;
+	}
+	ptr = ptr_alloc(&i, &neg, &n);
+	return (ptr);
 }

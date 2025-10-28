@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/15 11:00:46 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/15 15:26:44y mkhoubaz         ###   ########.fr       */
+/*   Created: 2025/10/28 08:29:30 by mkhoubaz          #+#    #+#             */
+/*   Updated: 2025/10/28 08:29:33 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	old_dst_len = dst_len;
 	src_len = ft_strlen(src);
 	i = 0;
-
 	if (size <= dst_len)
 		return (size + src_len);
-
 	while (src[i] && dst_len < size - 1)
 	{
 		dst[dst_len] = src[i];

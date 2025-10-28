@@ -6,7 +6,7 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 10:31:09 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/24 18:38:48 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/28 08:30:08 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,11 @@
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;
-	size_t 	src_len;
-
-	
+	size_t	src_len;
 
 	src_len = ft_strlen(src);
 	if (!size)
 		return (src_len);
-	
 	i = 0;
 	while (src[i] && i < size - 1)
 	{
@@ -30,6 +27,5 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		i++;
 	}
 	dst[i] = '\0';
-
 	return (src_len);
 }

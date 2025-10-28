@@ -6,7 +6,7 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 18:48:48 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/26 19:29:08 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/28 08:19:48 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 
 	if (!lst || !del)
 		return ;
-	
 	while (*lst)
 	{
 		p = *lst;

@@ -6,7 +6,7 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 01:05:33 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/26 01:56:50 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/28 08:22:14 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_lstsize(t_list *lst)
 {
-    int	i;
+	int	i;
 
 	i = 0;
 	while (lst != NULL)

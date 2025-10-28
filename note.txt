@@ -1,5 +1,3 @@
 Failed tests: 👍
 
-test peco for itoa
-
-fix norminte: 
+fix norminte: strnstr
