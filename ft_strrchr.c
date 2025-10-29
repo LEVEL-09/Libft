@@ -6,7 +6,7 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 07:50:01 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/28 08:33:54 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/29 20:27:58 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ char	*ft_strrchr(const char *s, int c)
 		flag = 1;
 		point = i;
 	}
-	if (flag != 0)
+	if (!flag)
 		return ((char *)s + point);
 	else
 		return (NULL);

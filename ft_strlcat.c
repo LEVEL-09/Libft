@@ -6,7 +6,7 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 08:29:30 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/28 08:29:33 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/29 20:27:45 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	src_len;
 	size_t	old_dst_len;
 
+	if (!dst && !size)
+		return (ft_strlen(src));
 	dst_len = ft_strlen((const char *)dst);
 	old_dst_len = dst_len;
 	src_len = ft_strlen(src);
