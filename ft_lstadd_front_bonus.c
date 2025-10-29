@@ -6,7 +6,7 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 01:03:21 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/26 12:15:02 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/29 20:14:25 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
+	if (!lst)
+		return ;
 	if (!(*lst))
 	{
 		*lst = new;
