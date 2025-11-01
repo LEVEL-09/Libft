@@ -6,7 +6,7 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 06:56:06 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/28 08:18:13 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/30 19:39:34 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ static void	my_putnbr(char *ptr, int n, int *i)
 	ptr[*(i)] = (n % 10) + '0';
 }
 
-char	*ptr_alloc(int *i, int *neg, int *n)
+static char	*ptr_alloc(int *i, int *neg, int *n)
 {
 	int		j;
 	char	*ptr;
