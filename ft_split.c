@@ -6,7 +6,7 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 22:26:43 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/28 15:23:25 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/30 19:39:00 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ static char	*storge(char const *s, int start, int end)
 	return (str);
 }
 
-char	**fun(char **ptr, char const *s, char c, int word)
+static char	**fun(char **ptr, char const *s, char c, int word)
 {
 	int	i;
 	int	j;
@@ -92,9 +92,7 @@ char	**ft_split(char const *s, char c)
 	word = count_word(s, c);
 	ptr = (char **)malloc(sizeof(char *) * (word + 1));
 	if (!ptr)
-	{
 		return (NULL);
-	}
 	ptr = fun(ptr, s, c, word);
 	return (ptr);
 }

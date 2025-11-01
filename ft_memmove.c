@@ -6,7 +6,7 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 11:50:02 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/29 20:16:09 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/30 19:40:32 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,5 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	else
 		ft_memcpy (dest, src, n);
-	return ((unsigned char *)dest);
+	return (dest);
 }

@@ -6,7 +6,7 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 06:17:07 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/29 20:21:48 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/10/30 19:40:40 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ void	*ft_memset(void *b, int c, size_t len)
 		*(ptr + i) = (unsigned char)c;
 		i++;
 	}
-	return ((unsigned char *)b);
+	return (b);
 }
