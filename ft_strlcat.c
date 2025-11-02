@@ -6,7 +6,7 @@
 /*   By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 08:29:30 by mkhoubaz          #+#    #+#             */
-/*   Updated: 2025/10/29 20:27:45 by mkhoubaz         ###   ########.fr       */
+/*   Updated: 2025/11/02 10:56:45 by mkhoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		i++;
 	}
 	dst[dst_len] = '\0';
-	return (old_dst_len + src_len);
+	if (dst == src)
+		return (old_dst_len + size - 1);
+	else
+		return (old_dst_len + src_len);
 }
