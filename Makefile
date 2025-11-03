@@ -6,7 +6,7 @@
 #    By: mkhoubaz <mkhoubaz@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/24 09:54:39 by mkhoubaz          #+#    #+#              #
-#    Updated: 2025/10/28 15:23:05 by mkhoubaz         ###   ########.fr        #
+#    Updated: 2025/11/03 08:01:30 by mkhoubaz         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,8 +40,7 @@ $(NAME): $(OBJS)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJS)
-	rm -f $(OBJB)
+	rm -f $(OBJS) $(OBJB)
 
 fclean: clean
 	rm -f $(NAME)
